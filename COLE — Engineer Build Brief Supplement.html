@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)file:///C:/Users/Mike%20and%20Megan/Downloads/COLE_Engineer_Build_Brief_Supplement.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COLE — Engineer Build Brief Supplement</title>
+<link href="./COLE — Engineer Build Brief Supplement_files/css2" rel="stylesheet">
+<style>
+:root {
+  --orange: #E05C1A;
+  --dark: #0F0F1E;
+  --card: #13132A;
+  --mid: #1E1E38;
+  --cream: #F5EDD6;
+  --gray: #B0B0C8;
+  --white: #FAFAF8;
+  --green: #1a7a4a;
+  --green-light: #e8f5ee;
+  --red: #c0392b;
+  --red-light: #fdecea;
+  --amber: #b45309;
+  --amber-light: #fef3c7;
+  --code-bg: #0A0A18;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'DM Sans', sans-serif; background: var(--dark); color: var(--white); font-size: 15px; line-height: 1.7; }
+
+.masthead { background: #0A0A14; padding: 3rem 4rem 2.5rem; border-bottom: 4px solid var(--orange); position: relative; overflow: hidden; }
+.masthead-bg { position: absolute; top: -20px; right: -10px; font-family: 'Bebas Neue', sans-serif; font-size: 300px; color: rgba(224,92,26,0.04); line-height: 1; pointer-events: none; }
+.logo { display: flex; align-items: baseline; margin-bottom: 0.5rem; position: relative; }
+.l92 { font-family: 'Bebas Neue', sans-serif; font-size: 48px; color: var(--orange); line-height: 1; }
+.l11 { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 22px; color: var(--cream); padding-left: 6px; }
+.masthead-title { font-size: 22px; font-weight: 600; color: var(--white); margin-bottom: 0.25rem; position: relative; }
+.masthead-sub { font-size: 13px; color: var(--gray); position: relative; }
+.masthead-meta { display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--mid); font-size: 12px; color: rgba(255,255,255,0.4); position: relative; }
+
+.warning-bar { background: rgba(224,92,26,0.15); border-left: 4px solid var(--orange); padding: 1rem 4rem; font-size: 13px; color: var(--cream); }
+.warning-bar strong { color: var(--orange); }
+
+.nav { background: var(--card); padding: 0.75rem 4rem; display: flex; gap: 0.5rem 1.5rem; flex-wrap: wrap; border-bottom: 1px solid var(--mid); position: sticky; top: 0; z-index: 100; }
+.nav-label { font-size: 10px; font-weight: 700; color: var(--gray); letter-spacing: 0.15em; text-transform: uppercase; }
+.nav a { font-size: 12px; color: var(--white); text-decoration: none; border-bottom: 1.5px solid var(--orange); padding-bottom: 1px; white-space: nowrap; }
+.nav a:hover { color: var(--orange); }
+
+.container { max-width: 1000px; margin: 0 auto; padding: 0 4rem; }
+.section { padding: 3rem 0; border-bottom: 1px solid var(--mid); }
+
+.eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.5rem; }
+.section-title { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; color: var(--white); margin-bottom: 0.5rem; }
+.section-intro { font-size: 14px; color: var(--gray); max-width: 720px; margin-bottom: 2rem; line-height: 1.7; }
+.section-intro em { color: var(--cream); font-style: normal; }
+
+table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
+th { background: var(--card); color: var(--orange); font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; padding: 10px 14px; text-align: left; border-bottom: 2px solid var(--orange); }
+td { padding: 10px 14px; font-size: 13px; color: var(--gray); border-bottom: 1px solid var(--mid); vertical-align: top; line-height: 1.6; }
+td strong { color: var(--white); }
+tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+
+.badge { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 2px 8px; border-radius: 4px; }
+.b-green { background: var(--green-light); color: var(--green); }
+.b-orange { background: #fff3ec; color: #a03d0a; }
+.b-red { background: var(--red-light); color: var(--red); }
+.b-amber { background: var(--amber-light); color: var(--amber); }
+.b-blue { background: #e8f0fe; color: #1a56db; }
+
+.callout { border-radius: 10px; padding: 1.25rem 1.5rem; margin: 1.25rem 0; }
+.c-orange { background: #1A0C04; border-left: 4px solid var(--orange); }
+.c-orange p, .c-orange li { color: var(--cream); font-size: 13px; line-height: 1.7; }
+.c-orange .cl { color: var(--orange); font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.4rem; }
+.c-orange ul { padding-left: 1.5rem; }
+.c-orange li { margin-bottom: 0.25rem; }
+
+.c-green { background: var(--green-light); border-left: 4px solid var(--green); }
+.c-green p { color: #145a38; font-size: 13px; line-height: 1.7; }
+.c-green .cl { color: var(--green); font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.4rem; }
+
+code { font-family: 'JetBrains Mono', monospace; background: var(--code-bg); color: var(--orange); padding: 2px 6px; border-radius: 4px; font-size: 12px; }
+
+.code-block { background: var(--code-bg); border: 1px solid var(--mid); border-left: 3px solid var(--orange); border-radius: 8px; padding: 1.25rem 1.5rem; margin: 1rem 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--gray); line-height: 1.8; overflow-x: auto; white-space: pre; }
+.code-block .key { color: var(--orange); }
+.code-block .val { color: #7ec8e3; }
+.code-block .comment { color: #444466; }
+
+.tier-card { background: var(--card); border: 1px solid var(--mid); border-radius: 14px; padding: 2rem; margin-bottom: 1.5rem; position: relative; overflow: hidden; }
+.tier-card.featured { border-color: var(--orange); }
+.tier-watermark { position: absolute; top: -10px; right: 10px; font-family: 'Bebas Neue', sans-serif; font-size: 100px; color: rgba(224,92,26,0.06); line-height: 1; pointer-events: none; }
+.tier-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem; }
+.tier-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--white); }
+.tier-price { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--orange); }
+.tier-cole { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--orange); background: rgba(224,92,26,0.1); padding: 3px 10px; border-radius: 20px; border: 1px solid rgba(224,92,26,0.2); }
+.tier-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem; }
+.tier-col-title { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.75rem; }
+.tier-item { font-size: 13px; color: var(--gray); padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.04); display: flex; align-items: flex-start; gap: 8px; line-height: 1.5; }
+.tier-item::before { content: "→"; color: var(--orange); flex-shrink: 0; }
+
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.5rem; }
+.mini-card { background: var(--card); border: 1px solid var(--mid); border-radius: 10px; padding: 1.25rem; }
+.mini-title { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.75rem; }
+.mini-body { font-size: 13px; color: var(--gray); line-height: 1.7; }
+.mini-body strong { color: var(--white); }
+
+.universe-tier { background: var(--card); border-left: 3px solid var(--orange); border-radius: 0 10px 10px 0; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: grid; grid-template-columns: 160px 1fr 120px; gap: 1rem; align-items: center; }
+.ut-name { font-size: 14px; font-weight: 700; color: var(--white); }
+.ut-desc { font-size: 13px; color: var(--gray); line-height: 1.5; }
+.ut-model { font-size: 11px; font-weight: 600; color: var(--orange); text-align: right; }
+
+.decision-item { background: var(--card); border: 1px solid var(--mid); border-radius: 10px; padding: 1.25rem; margin-bottom: 1rem; }
+.decision-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.5rem; }
+.decision-text { font-size: 13px; color: var(--gray); line-height: 1.7; }
+.decision-text strong { color: var(--white); }
+
+footer { background: #0A0A14; border-top: 4px solid var(--orange); padding: 2.5rem 4rem; text-align: center; font-size: 13px; color: var(--gray); line-height: 1.8; }
+footer strong { color: var(--orange); }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="masthead-bg">COLE</div>
+  <div class="logo"><span class="l92">92</span><span class="l11">eleven</span></div>
+  <div class="masthead-title">COLE — Engineer Build Brief Supplement</div>
+  <div class="masthead-sub">Technical architecture, inherited capabilities, tier map, and build decisions for CTO.new engineers</div>
+  <div class="masthead-meta">
+    <span>Prepared by: Atlas, Chief of Staff</span>
+    <span>Date: June 4, 2026</span>
+    <span>Supplement to: COLE Build Brief v1.0</span>
+    <span>For: CTO.new Engineering Team (3-4 engineers)</span>
+    <span>Classification: Confidential</span>
+  </div>
+</div>
+
+<div class="warning-bar">
+  <strong>READ THIS FIRST:</strong> This document supplements the COLE Build Brief v1.0. Read both documents before starting any build work. This supplement covers Vero inheritance, OAI tier technical specs, the COLE Universe scaling vision, and build decisions not captured in the main brief.
+</div>
+
+<nav class="nav">
+  <span class="nav-label">Sections:</span>
+  <a href="file:///C:/Users/Mike%20and%20Megan/Downloads/COLE_Engineer_Build_Brief_Supplement.html#vero">Vero Inheritance</a>
+  <a href="file:///C:/Users/Mike%20and%20Megan/Downloads/COLE_Engineer_Build_Brief_Supplement.html#tiers">OAI Tier Map</a>
+  <a href="file:///C:/Users/Mike%20and%20Megan/Downloads/COLE_Engineer_Build_Brief_Supplement.html#universe">COLE Universe</a>
+  <a href="file:///C:/Users/Mike%20and%20Megan/Downloads/COLE_Engineer_Build_Brief_Supplement.html#decisions">Build Decisions</a>
+  <a href="file:///C:/Users/Mike%20and%20Megan/Downloads/COLE_Engineer_Build_Brief_Supplement.html#sequence">Build Sequence</a>
+</nav>
+
+<div class="container">
+
+<!-- SECTION 1 — VERO INHERITANCE -->
+<div id="vero" class="section">
+  <p class="eyebrow">Section 1</p>
+  <h2 class="section-title">Vero Architecture Inheritance</h2>
+  <p class="section-intro">Vero (Vatrera AI) is a proven agentic AI system built on the same CTO.new platform. COLE inherits Vero's core architecture and adapts it for the contact center domain. <em>Do not rebuild what already works — inherit and extend.</em></p>
+
+  <div class="callout c-orange">
+    <div class="cl">Inheritance Principle</div>
+    <p>Vero's architecture is the technical foundation. COLE's contact center domain expertise is the intelligence layer on top. The engineers already know how Vero works. COLE is Vero's "bigger, more opinionated sibling" — same DNA, different domain, deeper personality.</p>
+  </div>
+
+  <h3 style="color:var(--orange);font-size:1rem;margin-bottom:1rem;margin-top:1.5rem;">FULL CAPABILITY INHERITANCE MAP</h3>
+
+  <table>
+    <tbody><tr><th>Vero Capability</th><th>Inherit?</th><th>COLE Adaptation</th><th>Priority</th></tr>
+    <tr>
+      <td><strong>Auto-Apply Feedback Loop</strong><br><small>Prompt diffs — improves routing accuracy over time</small></td>
+      <td><span class="badge b-green">Inherit + Extend</span></td>
+      <td>COLE's feedback loop adds contact center context: after every session manager rates 1-5 + one sentence. COLE applies feedback to next session AND escalates complexity automatically. Feeds ROAT™ health score.</td>
+      <td><span class="badge b-red">Critical — Build First</span></td>
+    </tr>
+    <tr>
+      <td><strong>Appointment Booking Completion</strong><br><small>Direct revenue driver — closes qual-to-booked loop</small></td>
+      <td><span class="badge b-green">Inherit + Extend</span></td>
+      <td>COLE books: 1:1 coaching sessions, director briefings, performance reviews, team huddles, skip-level meetings. Prepares agenda and drafts pre-meeting comms automatically. Follows up post-meeting with action items.</td>
+      <td><span class="badge b-amber">Phase 2 — Week 2</span></td>
+    </tr>
+    <tr>
+      <td><strong>Webhook Mode</strong><br><small>Real-time event triggers and integrations</small></td>
+      <td><span class="badge b-green">Inherit Direct</span></td>
+      <td>Same webhook architecture. COLE triggers on: service level drops below threshold, agent adherence deviation, director report due, intraday staffing gap detected. Routes alerts to Slack/Teams.</td>
+      <td><span class="badge b-amber">Phase 2 — Week 2</span></td>
+    </tr>
+    <tr>
+      <td><strong>Docker Deployment</strong><br><small>Containerized — runs anywhere</small></td>
+      <td><span class="badge b-green">Inherit Direct</span></td>
+      <td>No changes needed. Enterprise clients with data security requirements (healthcare, finance, government contact centers) need on-premise deployment. Docker handles this without modification.</td>
+      <td><span class="badge b-amber">Phase 4 — Week 4</span></td>
+    </tr>
+    <tr>
+      <td><strong>Continuous Improvement Engine</strong><br><small>Logs conversations, quality scores, A/B tests</small></td>
+      <td><span class="badge b-green">Inherit + Extend</span></td>
+      <td>COLE adds ROAT™ health scoring on top of Vero's engine. Every session scored 0-100. Weekly improvement cycle runs automatically Monday morning. Manager sees their ROAT™ score improving over time in web dashboard.</td>
+      <td><span class="badge b-red">Critical — Build First</span></td>
+    </tr>
+    <tr>
+      <td><strong>Knowledge Base (FAQs)</strong><br><small>Pulls from existing client docs</small></td>
+      <td><span class="badge b-green">Inherit + Extend</span></td>
+      <td>COLE's knowledge base is pre-loaded with 30 years of contact center operational expertise. Client-specific layer added at onboarding: SOPs, escalation paths, shift rules, service level targets, agent roster profiles.</td>
+      <td><span class="badge b-red">Critical — Build First</span></td>
+    </tr>
+    <tr>
+      <td><strong>Lead Qualification Logic (Brain)</strong><br><small>Qualification logic, priority scoring</small></td>
+      <td><span class="badge b-green">Inherit + Adapt</span></td>
+      <td>COLE's Brain = scheduling rules engine, WFM constraints logic, priority scoring for intraday decisions. Replaces lead qualification with ticket/case triage — auto-prioritize manager requests by urgency and impact.</td>
+      <td><span class="badge b-red">Critical — Build First</span></td>
+    </tr>
+    <tr>
+      <td><strong>Gmail + Twilio + Calendar Integrations</strong><br><small>Core communication channels</small></td>
+      <td><span class="badge b-green">Inherit Direct</span></td>
+      <td>Same integration code. Gmail → coaching summaries, escalation docs, executive reports. Twilio → SMS notifications for schedule changes, intraday alerts. Calendar → booking all scheduled sessions. Use Brevo SMTP for 92eleven-branded emails (mike@92eleven.com already authenticated).</td>
+      <td><span class="badge b-amber">Phase 2 — Week 2</span></td>
+    </tr>
+    <tr>
+      <td><strong>3-Part Follow-Up Sequences</strong><br><small>Day 3, 7, 14 follow-ups</small></td>
+      <td><span class="badge b-green">Inherit + Adapt</span></td>
+      <td>COLE's sequences: Day 1 post-coaching check-in, Day 7 progress review, Day 14 outcome assessment. Feeds back into agent development tracking and ROAT™ scoring.</td>
+      <td><span class="badge b-amber">Phase 3 — Week 3</span></td>
+    </tr>
+    <tr>
+      <td><strong>MCP Support Layer</strong><br><small>Clients configure connections — agent learns automatically</small></td>
+      <td><span class="badge b-green">Inherit + Prioritize</span></td>
+      <td>Build core integrations (Gmail, Twilio, Calendar) as custom adapters that work out of the box. MCP layer = premium add-on. First MCP: Slack (doubles product appeal). Second: Calabrio (WFM platform our founder co-implemented). Third: Notion, HubSpot, Linear/Jira.</td>
+      <td><span class="badge b-amber">Phase 4 — Weeks 4-5</span></td>
+    </tr>
+    <tr>
+      <td><strong>Voice — Twilio + ElevenLabs</strong><br><small>Inbound/outbound calls</small></td>
+      <td><span class="badge b-green">Inherit + Configure</span></td>
+      <td>ElevenLabs voice: "Adam" — Stability 0.65, Clarity 0.75, Style exaggeration 0.30. Warm, confident, measured. Not robotic. Not casual. The voice of someone who has managed hundreds of people. "Talk to COLE" is the sticky bar CTA on 92eleven.com — this is the feature that fulfills that promise.</td>
+      <td><span class="badge b-amber">Phase 4 — Weeks 4-5</span></td>
+    </tr>
+    <tr>
+      <td><strong>White-Label Architecture</strong><br><small>Clients brand the agent as their own</small></td>
+      <td><span class="badge b-green">Inherit — Critical for Scale</span></td>
+      <td>COLE white-label = other companies license COLE and embed him under their own brand. WFM software vendors, BPO companies, contact center consultancies. This is a licensing revenue model layered on top of the direct product revenue. Build white-label from day one — don't retrofit later.</td>
+      <td><span class="badge b-blue">Phase 5 — Enterprise</span></td>
+    </tr>
+  </tbody></table>
+
+  <h3 style="color:var(--orange);font-size:1rem;margin-bottom:1rem;margin-top:1.5rem;">WHAT DOES NOT TRANSFER FROM VERO</h3>
+  <table>
+    <tbody><tr><th>Vero Element</th><th>Why Not Inherited</th></tr>
+    <tr><td><strong>1,060 lead database</strong></td><td>Vatrera asset — being sold with the company on Flippa. Do not reference or use.</td></tr>
+    <tr><td><strong>LinkedIn/Twitter auto-poster</strong></td><td>Vatrera marketing engine — not relevant to COLE's B2B ops platform model.</td></tr>
+    <tr><td><strong>Real estate / health / legal templates</strong></td><td>Vatrera verticals — COLE is contact center only at launch.</td></tr>
+    <tr><td><strong>Vero's persona and personality</strong></td><td>COLE has his own character brief. Do not use Vero's warmth/executive-assistant positioning. COLE is a WFM veteran, not an assistant.</td></tr>
+  </tbody></table>
+</div>
+
+<!-- SECTION 2 — OAI TIER MAP -->
+<div id="tiers" class="section">
+  <p class="eyebrow">Section 2</p>
+  <h2 class="section-title">OAI Series — Full Technical Tier Map</h2>
+  <p class="section-intro">The Operational AI Intelligence Series is a five-tier product line. Each tier is a superset of the one below it — <em>never rebuild, always extend.</em> The engineering team should architect each tier as a configuration layer, not a separate product.</p>
+
+  <!-- COLE SYSTEM -->
+  <div class="tier-card featured">
+    <div class="tier-watermark">S</div>
+    <div class="tier-header">
+      <div>
+        <div class="tier-name">The COLE System</div>
+        <div style="font-size:12px;color:var(--gray);margin-top:2px;">Standalone product — feeds into OAI Series</div>
+      </div>
+      <div style="text-align:right;">
+        <div class="tier-price">$49</div>
+        <div class="tier-cole">COLE Introduced</div>
+      </div>
+    </div>
+    <div class="tier-grid">
+      <div>
+        <div class="tier-col-title">What the buyer gets</div>
+        <div class="tier-item">103 prompts — 92 standard + 11 SUPER</div>
+        <div class="tier-item">8 categories across full contact center ops domain</div>
+        <div class="tier-item">Built-in growth loop — complexity escalates with use</div>
+        <div class="tier-item">ROAT™ health score — session rating 1-5 tracked</div>
+        <div class="tier-item">PDF + Word format — no technical setup required</div>
+        <div class="tier-item">Claude Projects setup guide included</div>
+      </div>
+      <div>
+        <div class="tier-col-title">Technical requirements</div>
+        <div class="tier-item">Static document delivery — no backend needed at this tier</div>
+        <div class="tier-item">Growth loop = prompt instruction appended to every prompt</div>
+        <div class="tier-item">ROAT™ score at this tier = manual tracking by buyer</div>
+        <div class="tier-item">Works with any LLM — ChatGPT, Claude, Copilot</div>
+        <div class="tier-item">No authentication or account required</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OAI OPERATOR -->
+  <div class="tier-card">
+    <div class="tier-watermark">T1</div>
+    <div class="tier-header">
+      <div>
+        <div class="tier-name">OAI Operator — Tier 1</div>
+        <div style="font-size:12px;color:var(--gray);margin-top:2px;">Entry point to the OAI Series platform</div>
+      </div>
+      <div style="text-align:right;">
+        <div class="tier-price">$99</div>
+        <div class="tier-cole">COLE Activated</div>
+      </div>
+    </div>
+    <div class="tier-grid">
+      <div>
+        <div class="tier-col-title">What the buyer gets</div>
+        <div class="tier-item">Everything in The COLE System</div>
+        <div class="tier-item">AI strategy playbook — how to build an AI ops strategy</div>
+        <div class="tier-item">ROAT™ framework implementation worksheets</div>
+        <div class="tier-item">Automated feedback loop — COLE applies session feedback without manual prompting</div>
+        <div class="tier-item">3-part follow-up sequences — Day 1, 7, 14 post-coaching</div>
+        <div class="tier-item">ROAT™ health score — automated tracking, weekly brief</div>
+      </div>
+      <div>
+        <div class="tier-col-title">Technical requirements</div>
+        <div class="tier-item">COLE Brain — basic rules engine active</div>
+        <div class="tier-item">Session logging database — SQLite acceptable at this tier</div>
+        <div class="tier-item">Auto-feedback application — prompt diff engine from Vero</div>
+        <div class="tier-item">ROAT™ calculator — formula: (QS×0.40)+(IR×0.25)+(CE×0.20)+(ST×0.15)</div>
+        <div class="tier-item">Weekly automated brief — email via Brevo SMTP</div>
+        <div class="tier-item">User account required — basic auth</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OAI COMMANDER -->
+  <div class="tier-card">
+    <div class="tier-watermark">T2</div>
+    <div class="tier-header">
+      <div>
+        <div class="tier-name">OAI Commander — Tier 2</div>
+        <div style="font-size:12px;color:var(--gray);margin-top:2px;">Full implementation — multi-channel deployment</div>
+      </div>
+      <div style="text-align:right;">
+        <div class="tier-price">$199</div>
+        <div class="tier-cole">COLE Deployed</div>
+      </div>
+    </div>
+    <div class="tier-grid">
+      <div>
+        <div class="tier-col-title">What the buyer gets</div>
+        <div class="tier-item">Everything in OAI Operator</div>
+        <div class="tier-item">Contact center industry-specific AI implementation roadmap</div>
+        <div class="tier-item">Multi-channel deployment — email, SMS, calendar</div>
+        <div class="tier-item">Data fragmentation synthesis — pulls from multiple systems</div>
+        <div class="tier-item">Real-time webhook alerts — service level, adherence, staffing</div>
+        <div class="tier-item">ROAT™ web dashboard — visual health score over time</div>
+        <div class="tier-item">BPO accountability framework — SLA tracking and language</div>
+      </div>
+      <div>
+        <div class="tier-col-title">Technical requirements</div>
+        <div class="tier-item">Gmail integration — coaching summaries, executive reports</div>
+        <div class="tier-item">Twilio SMS — schedule change notifications, intraday alerts</div>
+        <div class="tier-item">Google Calendar — session booking and management</div>
+        <div class="tier-item">Webhook engine from Vero — adapted for WFM triggers</div>
+        <div class="tier-item">ROAT™ web dashboard — React frontend, session data visualized</div>
+        <div class="tier-item">PostgreSQL — upgrade from SQLite at this tier for data volume</div>
+        <div class="tier-item">Basic API layer for data ingestion from external sources</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OAI ARCHITECT -->
+  <div class="tier-card">
+    <div class="tier-watermark">T3</div>
+    <div class="tier-header">
+      <div>
+        <div class="tier-name">OAI Architect — Tier 3</div>
+        <div style="font-size:12px;color:var(--gray);margin-top:2px;">Custom build — COLE configured for your specific operation</div>
+      </div>
+      <div style="text-align:right;">
+        <div class="tier-price">$299</div>
+        <div class="tier-cole">COLE Builds For You</div>
+      </div>
+    </div>
+    <div class="tier-grid">
+      <div>
+        <div class="tier-col-title">What the buyer gets</div>
+        <div class="tier-item">Everything in OAI Commander</div>
+        <div class="tier-item">Discovery session — COLE's 20-question intake questionnaire</div>
+        <div class="tier-item">Custom COLE configuration — built around their specific operation</div>
+        <div class="tier-item">Team profile builder — COLE learns agent names, tiers, development focus</div>
+        <div class="tier-item">Director communication style profile — COLE adapts all upward comms</div>
+        <div class="tier-item">Custom prompt generation — COLE builds prompts for their exact situation</div>
+        <div class="tier-item">Deploy in 3-7 days — fully configured and ready to use</div>
+      </div>
+      <div>
+        <div class="tier-col-title">Technical requirements</div>
+        <div class="tier-item">Onboarding questionnaire engine — 20-question guided intake</div>
+        <div class="tier-item">Profile builder — persistent storage of team, director, and operation context</div>
+        <div class="tier-item">Custom prompt generator — takes profile data, outputs tailored prompts</div>
+        <div class="tier-item">Configuration manifest — exportable spec of custom COLE setup</div>
+        <div class="tier-item">Delivery process automation — discovery → intake → build → test → deploy</div>
+        <div class="tier-item">Slack MCP — first MCP integration at this tier (doubles appeal)</div>
+        <div class="tier-item">A/B testing framework from Vero — tests response variations per client</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OAI ENTERPRISE -->
+  <div class="tier-card">
+    <div class="tier-watermark">T4</div>
+    <div class="tier-header">
+      <div>
+        <div class="tier-name">OAI Enterprise — Tier 4</div>
+        <div style="font-size:12px;color:var(--gray);margin-top:2px;">Full agentic deployment — COLE runs the operation autonomously</div>
+      </div>
+      <div style="text-align:right;">
+        <div class="tier-price">$499+/mo</div>
+        <div class="tier-cole">COLE Runs For You</div>
+      </div>
+    </div>
+    <div class="tier-grid">
+      <div>
+        <div class="tier-col-title">What the buyer gets</div>
+        <div class="tier-item">Everything in OAI Architect</div>
+        <div class="tier-item">Voice — COLE answers calls, makes outbound calls</div>
+        <div class="tier-item">Autonomous scheduling — COLE optimizes schedules, fills shifts, plans capacity</div>
+        <div class="tier-item">24/7 autonomous operation — COLE monitors and responds without manager input</div>
+        <div class="tier-item">Agent ticket/case triage — auto-prioritize, route, and respond</div>
+        <div class="tier-item">Full Calabrio/Verint/NICE integration — reads real WFM data</div>
+        <div class="tier-item">ROAT™ autonomous reporting — weekly executive brief generated and delivered</div>
+        <div class="tier-item">Continuous improvement engine — full Vero architecture running weekly</div>
+        <div class="tier-item">Docker deployment — on-premise for enterprise security requirements</div>
+        <div class="tier-item">White-label option — client brands COLE as their own AI
+      </div>
+      <div>
+        <div class="tier-col-title">Technical requirements</div>
+        <div class="tier-item">Twilio voice — inbound + outbound call handling</div>
+        <div class="tier-item">ElevenLabs "Adam" — voice synthesis configuration (Stability 0.65, Clarity 0.75, Style 0.30)</div>
+        <div class="tier-item">Full MCP layer — Slack, Calabrio, Notion, HubSpot, Linear/Jira</div>
+        <div class="tier-item">PostgreSQL — enterprise data volumes, multi-tenant architecture</div>
+        <div class="tier-item">Agentic loop — COLE takes actions, not just answers questions</div>
+        <div class="tier-item">Calabrio adapter — read scheduling data, identify gaps, push adjustments</div>
+        <div class="tier-item">Multi-tenant isolation — each enterprise client's data fully isolated</div>
+        <div class="tier-item">SLA monitoring engine — tracks against contracted targets, alerts on deviation</div>
+        <div class="tier-item">Docker + Kubernetes for enterprise scale deployment</div>
+        <div class="tier-item">SOC 2 compliance design — employee performance data privacy requirements</div>
+      </div>
+    </div>
+    <div class="callout c-orange" style="margin-top:1.5rem;">
+      <div class="cl">Revenue Model Note</div>
+      <p>OAI Enterprise is the only recurring revenue tier — $499+/month subscription. All lower tiers are one-time purchases. This is the tier that transforms 92eleven from a digital product business into a SaaS company. Build the billing infrastructure (Stripe subscriptions) at this tier from day one.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 3 — COLE UNIVERSE -->
+<div id="universe" class="section">
+  <p class="eyebrow">Section 3</p>
+  <h2 class="section-title">The COLE Universe — Scaling Vision</h2>
+  <p class="section-intro">The engineer needs to understand where COLE scales so architecture decisions made today don't become blockers tomorrow. <em>Build for what COLE is becoming, not just what COLE is today.</em></p>
+
+  <div class="callout c-orange">
+    <div class="cl">The Core Insight</div>
+    <p>COLE is not a contact center tool. COLE is an intelligent workforce layer that can sit on top of any business function and run it. The contact center is the first vertical because it's the founder's domain. The architecture must be modular enough to clone into other verticals without rebuilding the core.</p>
+  </div>
+
+  <h3 style="color:var(--orange);font-size:1rem;margin-bottom:1rem;margin-top:1.5rem;">THE THREE REVENUE LAYERS</h3>
+
+  <div class="universe-tier">
+    <div class="ut-name">Layer 1<br>Direct Product</div>
+    <div class="ut-desc">Individual managers and small teams buy OAI tiers directly. $49–$499+/month. B2C and small B2B. Primary revenue source for the first 12-18 months.</div>
+    <div class="ut-model">One-time + SaaS</div>
+  </div>
+
+  <div class="universe-tier">
+    <div class="ut-name">Layer 2<br>Embedded API</div>
+    <div class="ut-desc">Other companies integrate COLE's intelligence into their own products via API. WFM software vendors embed COLE as a feature. BPOs offer COLE to their clients. Consultancies bundle COLE in their service. Per-seat licensing model.</div>
+    <div class="ut-model">API Licensing</div>
+  </div>
+
+  <div class="universe-tier">
+    <div class="ut-name">Layer 3<br>White Label</div>
+    <div class="ut-desc">Enterprise clients license COLE and brand him as their own AI. "Meet ARIA — our AI ops manager" (powered by COLE under the hood). Monthly white-label fee + revenue share. The client never mentions 92eleven — that's the point.</div>
+    <div class="ut-model">Revenue Share</div>
+  </div>
+
+  <h3 style="color:var(--orange);font-size:1rem;margin-bottom:1rem;margin-top:2rem;">VERTICAL EXPANSION MAP</h3>
+  <p style="font-size:13px;color:var(--gray);margin-bottom:1rem;">Same COLE architecture. Different knowledge base and domain prompts. Each vertical is a configuration — not a rebuild.</p>
+
+  <table>
+    <tbody><tr><th>Vertical</th><th>COLE's Role</th><th>Key Integrations</th><th>Timeline</th></tr>
+    <tr><td><strong>Contact Center</strong> — Launch vertical</td><td>WFM, coaching, escalations, reporting, HR</td><td>Calabrio, Verint, NICE, Zendesk</td><td><span class="badge b-green">Now</span></td></tr>
+    <tr><td><strong>Marketing Operations</strong></td><td>Runs campaigns, creates content, optimizes spend, reports ROAT™</td><td>HubSpot, Salesforce, Google Ads</td><td><span class="badge b-amber">Phase 2</span></td></tr>
+    <tr><td><strong>HR Operations</strong></td><td>Screens candidates, onboards employees, manages compliance, tracks development</td><td>Workday, BambooHR, Greenhouse</td><td><span class="badge b-amber">Phase 2</span></td></tr>
+    <tr><td><strong>Project Management</strong></td><td>Triages tickets, tracks milestones, generates status reports, flags blockers</td><td>Jira, Linear, Asana, Monday</td><td><span class="badge b-amber">Phase 2</span></td></tr>
+    <tr><td><strong>Retail / E-commerce</strong></td><td>Inventory intelligence, customer service triage, personalized shopping, recipe recommendations</td><td>Shopify, Klaviyo, Recharge</td><td><span class="badge b-red">Phase 3</span></td></tr>
+    <tr><td><strong>Construction / Architecture</strong></td><td>Reviews plans for feasibility, flags code violations, estimates materials, identifies structural issues</td><td>Procore, AutoCAD, Revit APIs</td><td><span class="badge b-red">Phase 3</span></td></tr>
+  </tbody></table>
+
+  <div class="callout c-orange">
+    <div class="cl">Architecture Requirement for Vertical Expansion</div>
+    <p>The knowledge base, prompt library, and domain rules must be stored as configuration — not hardcoded. When the engineer builds COLE's Brain, it must accept a <code>domain_config.json</code> that defines: industry vocabulary, key metrics, integration targets, escalation paths, and regulatory constraints. Swapping this config = new vertical. This is the modularity that makes COLE a platform, not a product.</p>
+  </div>
+
+  <h3 style="color:var(--orange);font-size:1rem;margin-bottom:1rem;margin-top:2rem;">THE PHASE 4 NORTH STAR — COLE LMS</h3>
+  <p style="font-size:13px;color:var(--gray);margin-bottom:1rem;">Thomas and Albert have reviewed and approved this as the 12-18 month vision. Engineers should be aware of it so today's architecture doesn't block it.</p>
+
+  <div class="two-col">
+    <div class="mini-card">
+      <div class="mini-title">What COLE LMS Does</div>
+      <div class="mini-body">
+        <strong>The 7-step autonomous loop:</strong><br>
+        1. Monitor — watches real agent performance data (AHT, adherence, quality scores)<br>
+        2. Identify — detects individual skill gaps per agent<br>
+        3. Generate — creates personalized micro-training content<br>
+        4. Deploy — pushes training to the agent automatically<br>
+        5. Review — scores training completion and comprehension<br>
+        6. Report — delivers manager briefing: "Here's what happened overnight. Here's what COLE did."<br>
+        7. Loop — repeats continuously, improving with each cycle
+      </div>
+    </div>
+    <div class="mini-card">
+      <div class="mini-title">Architecture Prerequisites</div>
+      <div class="mini-body">
+        <strong>These must be built correctly today to enable COLE LMS later:</strong><br><br>
+        • Agent performance data ingestion pipeline (Calabrio adapter is the seed)<br>
+        • Content generation framework with quality scoring<br>
+        • Multi-tenant data isolation — employee performance data is sensitive<br>
+        • Modular knowledge base — LMS content is another knowledge config<br>
+        • The feedback loop architecture — LMS is the feedback loop at scale<br><br>
+        <strong>Flag:</strong> Data privacy and compliance must be designed in at Phase 3 — not retrofitted. Healthcare, finance, and EU clients have regulatory requirements around employee performance data.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 4 — BUILD DECISIONS -->
+<div id="decisions" class="section">
+  <p class="eyebrow">Section 4</p>
+  <h2 class="section-title">Build Decisions — Not in Main Brief</h2>
+  <p class="section-intro">These decisions were made during factory planning sessions and must be honored in the build. They are not in the main COLE Build Brief v1.0.</p>
+
+  <div class="decision-item">
+    <div class="decision-label">Decision 1 — Database: PostgreSQL from Day One</div>
+    <div class="decision-text"><strong>Decision:</strong> PostgreSQL — not SQLite.<br>
+    <strong>Reason:</strong> COLE builds profile data, session history, ROAT™ tracking, and team rosters for each client. SQLite hits limits fast. With white-label and multi-tenant Enterprise on the roadmap, PostgreSQL is the only viable choice. Do not start with SQLite and plan to migrate — build PostgreSQL from day one.<br>
+    <strong>Owner confirmation:</strong> Mike approved this decision explicitly.</div>
+  </div>
+
+  <div class="decision-item">
+    <div class="decision-label">Decision 2 — ROAT™ Dashboard: Web Dashboard (Not CLI)</div>
+    <div class="decision-text"><strong>Decision:</strong> Build a web dashboard for ROAT™ health scores — not a CLI report.<br>
+    <strong>Reason:</strong> ROAT™ is a marketing asset and a sales tool. Buyers need to SEE their score improving on a screen they can screenshot and share. A CLI report doesn't have the same impact. The dashboard is part of the product experience — not just a reporting utility.<br>
+    <strong>Minimum viable dashboard:</strong> Session score over time (line chart), current health score (0-100 gauge), top improvement this week, most-used COLE capability, weekly comparison. React frontend preferred.<br>
+    <strong>Owner confirmation:</strong> Mike approved this decision explicitly.</div>
+  </div>
+
+  <div class="decision-item">
+    <div class="decision-label">Decision 3 — Engineer Count: Request 3-4 Engineers</div>
+    <div class="decision-text"><strong>Decision:</strong> Request 3-4 engineers from CTO.new — not 2.<br>
+    <strong>Reason:</strong> 2 engineers = 6 weeks to OAI Enterprise. 3-4 engineers = 3-4 weeks. Given the market timing opportunity (MCP is new, contact center AI space is wide open, no competitors with this architecture yet), speed is a scoring variable. The faster COLE is in market, the larger the first-mover advantage.<br>
+    <strong>Owner confirmation:</strong> Mike approved this decision explicitly.</div>
+  </div>
+
+  <div class="decision-item">
+    <div class="decision-label">Decision 4 — MCP First Integration: Slack</div>
+    <div class="decision-text"><strong>Decision:</strong> Slack is the first MCP integration — before Calabrio, Notion, or HubSpot.<br>
+    <strong>Reason:</strong> Every contact center manager already lives in Slack or Teams. COLE in Slack = real-time intelligence where managers already work. Service level alert at 8am in Slack is more valuable than an email. CTO.new confirmed this doubles product appeal. Build Slack MCP at Tier 3 (OAI Architect).<br>
+    <strong>Second MCP:</strong> Calabrio — our founder co-led its implementation and has deep technical familiarity. Build Calabrio adapter as a concierge setup for Enterprise clients.</div>
+  </div>
+
+  <div class="decision-item">
+    <div class="decision-label">Decision 5 — LLM: Claude Primary, GPT-4 Fallback</div>
+    <div class="decision-text"><strong>Decision:</strong> Default LLM is Claude (Anthropic). GPT-4 as fallback. Configurable per client at Enterprise tier.<br>
+    <strong>Reason:</strong> 92eleven is built on Claude. The product experience, the prompt architecture, and the brand voice have all been developed in Claude. COLE's personality is most consistent on Claude. GPT-4 fallback ensures reliability. Enterprise clients may have existing OpenAI relationships — configurable LLM is a sales feature at that tier.</div>
+  </div>
+
+  <div class="decision-item">
+    <div class="decision-label">Decision 6 — Email Infrastructure: Brevo SMTP</div>
+    <div class="decision-text"><strong>Decision:</strong> All COLE-generated emails send from mike@92eleven.com via Brevo SMTP — already authenticated.<br>
+    <strong>Credentials needed:</strong> Brevo API key (Mike will provide). Do not use a generic transactional email service — the 92eleven domain authentication is already complete and must be preserved.<br>
+    <strong>Email types COLE sends:</strong> Weekly ROAT™ brief, coaching session summaries, director reports, schedule change notifications, follow-up sequences, onboarding confirmations.</div>
+  </div>
+
+  <div class="decision-item">
+    <div class="decision-label">Decision 7 — Pricing Architecture: All Prices End in 9</div>
+    <div class="decision-text"><strong>Decision:</strong> Every 92eleven price ends in 9. No exceptions. $49 · $99 · $199 · $299 · $499.<br>
+    <strong>Reason:</strong> Psychological pricing standard. Consistent across all products. If any pricing UI is built into the platform (checkout, upgrade prompts, plan selection), this rule must be honored in every displayed price.</div>
+  </div>
+
+  <div class="decision-item">
+    <div class="decision-label">Decision 8 — COLE's Name Appears at Every Tier</div>
+    <div class="decision-text"><strong>Decision:</strong> COLE is the character present at every tier — growing in capability but always COLE.<br>
+    <strong>Implication for UI:</strong> Every tier's interface, every email, every dashboard shows COLE's name and references his character. The "COLE office" illustration (navy suit, burnt orange shirt, leaning on desk, 92eleven mug) is his avatar image. At Enterprise tier, voice interactions use "Hi, I'm COLE" as the opening line.<br>
+    <strong>Do not:</strong> Use generic "AI assistant" language anywhere in the product. COLE has a name. Use it.</div>
+  </div>
+
+  <div class="decision-item">
+    <div class="decision-label">Decision 9 — ROAT™ Formula (Locked)</div>
+    <div class="decision-text"><strong>Decision:</strong> The ROAT™ health score formula is locked and must be implemented exactly as specified.<br>
+    <div class="code-block"><span class="key">ROAT_score</span> = (
+  <span class="val">quality_score</span>     × 0.40  <span class="comment"># Session rating average (1-10 normalized to 0-1)</span>
+  <span class="val">improvement_rate</span>  × 0.25  <span class="comment"># Week-over-week quality score delta</span>
+  <span class="val">complexity_escalation</span> × 0.20  <span class="comment"># Prompt complexity growth rate over sessions</span>
+  <span class="val">satisfaction_trend</span> × 0.15  <span class="comment"># Rolling 4-week satisfaction direction</span>
+)
+<span class="comment"># Output: 0-100 score. Store per session. Display weekly trend.</span></div>
+    <strong>Marketing hook tied to this formula:</strong> "Are you measuring your ROAT™?" — this is a registered-pending trademark of 92eleven. Always display as ROAT™ in any UI.</div>
+  </div>
+
+  <div class="decision-item">
+    <div class="decision-label">Decision 10 — The 103 Prompt Architecture is a Brand Signature</div>
+    <div class="decision-text"><strong>Decision:</strong> The COLE System contains exactly 103 prompts — 92 standard + 11 SUPER. This number is intentional and must never be changed without founder approval.<br>
+    <strong>Why:</strong> 103 = 92 + 11 = a deliberate reference to 9211 Adams Street — the founder's childhood home and the origin of the 92eleven brand name. This is a brand signature baked into the product architecture. If any UI displays prompt counts, it must show 103 total (92 + 11 SUPER).<br>
+    <strong>SUPER prompt standard:</strong> "Would an experienced contact center director pay $49 just for these 11 prompts alone?" If the answer is yes — it's a SUPER prompt. This standard governs which prompts earn the SUPER designation.</div>
+  </div>
+</div>
+
+<!-- SECTION 5 — BUILD SEQUENCE -->
+<div id="sequence" class="section">
+  <p class="eyebrow">Section 5</p>
+  <h2 class="section-title">Recommended Build Sequence</h2>
+  <p class="section-intro">Optimized for fastest path to revenue while building the foundation that scales to Enterprise. Each phase is independently shippable.</p>
+
+  <table>
+    <tbody><tr><th>Phase</th><th>Timeline</th><th>What Ships</th><th>Revenue Unlock</th></tr>
+    <tr>
+      <td><strong>Phase 1 — Core Foundation</strong></td>
+      <td>Week 1</td>
+      <td>COLE Brain (scheduling rules engine) · Knowledge base loader · Auto-feedback loop · ROAT™ calculator · PostgreSQL schema · Basic CLI</td>
+      <td>Internal only — foundation for all revenue tiers</td>
+    </tr>
+    <tr>
+      <td><strong>Phase 2 — Communications Layer</strong></td>
+      <td>Week 2</td>
+      <td>Gmail integration · Twilio SMS · Google Calendar booking · Webhook engine · 3-part follow-up sequences · Brevo SMTP email</td>
+      <td>OAI Operator $99 unlocked — first platform revenue</td>
+    </tr>
+    <tr>
+      <td><strong>Phase 3 — Personalization + Dashboard</strong></td>
+      <td>Week 3</td>
+      <td>Full ROAT™ web dashboard · Onboarding questionnaire · Team profile builder · Director communication style profile · Custom prompt generator · A/B testing from Vero</td>
+      <td>OAI Commander $199 unlocked · OAI Architect $299 unlocked</td>
+    </tr>
+    <tr>
+      <td><strong>Phase 4 — Voice + MCP</strong></td>
+      <td>Weeks 4-5</td>
+      <td>ElevenLabs "Adam" voice · Twilio inbound/outbound calls · Slack MCP integration · Docker containerization · "Talk to COLE" feature live</td>
+      <td>Voice product live · Slack integration doubles appeal</td>
+    </tr>
+    <tr>
+      <td><strong>Phase 5 — Enterprise</strong></td>
+      <td>Week 6+</td>
+      <td>Calabrio adapter · Full MCP layer (Notion, HubSpot, Linear) · Multi-tenant isolation · Stripe subscription billing · White-label config · SOC 2 compliance design · Kubernetes deployment</td>
+      <td>OAI Enterprise $499+/mo unlocked — recurring revenue begins</td>
+    </tr>
+  </tbody></table>
+
+  <div class="callout c-orange">
+    <div class="cl">Parallel Track — Prompt Pack Revenue</div>
+    <p>While the platform is being built, The COLE System prompt pack ($49) ships as a static PDF/Word document product. This generates revenue immediately without waiting for Phase 1 to complete. The prompt pack and the platform are parallel workstreams — one does not block the other. The prompt pack IS the product brief for the knowledge base that goes into Phase 1.</p>
+  </div>
+</div>
+
+</div>
+
+<footer>
+  <strong>COLE — Engineer Build Brief Supplement v1.0</strong><br>
+  Prepared by Atlas, Chief of Staff · 92eleven Digital Business Factory · June 4, 2026<br>
+  Read in conjunction with COLE Build Brief v1.0<br>
+  For: CTO.new Engineering Team (3-4 engineers requested)<br><br>
+  <strong>92eleven — Where smart work begins · 92eleven.com · mike@92eleven.com</strong><br>
+  <span style="color:#333;font-size:12px;">Confidential — For engineering team use only</span>
+</footer>
+
+
+
+</div></body></html>
