@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "total_prompts": 15,
+    "category": "Scheduling and Workforce Planning",
+    "category_id": 1,
+    "version": "1.0",
+    "built_by": "92eleven",
+    "notes": "Built from 30 years of real contact center ops experience. Every prompt reflects a real situation a WFM manager faces."
+  },
+  "category": {
+    "id": 1,
+    "slug": "scheduling",
+    "title": "Scheduling and Workforce Planning",
+    "range": "01-15",
+    "prompts": [
+      {
+        "id": "COLE-01",
+        "title": "Data Scrub Before Forecast Build",
+        "super": false,
+        "prompt": "I'm about to build my staffing forecast for the upcoming period and I want to make sure my data is clean before I start. Walk me through a complete data scrub process for my WFM dataset. I need to identify inaccurate, incomplete, or irrelevant data points that could skew my projections — including how to spot historical anomalies like holidays, one-time events, or volume outliers that don't reflect future patterns. Give me a step-by-step process I can replicate every time I build a new forecast so I stop spending time correcting mistakes after the fact."
+      },
+      {
+        "id": "COLE-02",
+        "title": "Forecast Variance Root Cause Analysis",
+        "super": false,
+        "prompt": "My actual volume came in significantly different from my forecast today and my director is going to ask what happened. Help me conduct a fast root cause analysis on my forecast variance. I need to identify whether the gap was caused by bad input data, a modeling error, an unplanned external event, or an IVA containment rate shift. Then help me build a clear, concise explanation I can give my director that tells the right story — acknowledging what happened, what I've learned, and what I'm changing in my process to prevent it from happening again."
+      },
+      {
+        "id": "COLE-03",
+        "title": "IVA Containment Rate Impact on Staffing",
+        "super": false,
+        "prompt": "My forecast model is built around a specific IVA containment rate and that rate has shifted — either dropped unexpectedly or is being projected to change in the coming weeks. Help me quantify the staffing impact of this containment rate shift on my coverage plan. Walk me through how to recalculate my live agent volume requirements based on the new containment reality, and help me build talking points for a conversation with the AI/tech team so I can stay ahead of future changes rather than reacting to them after they've already hit my coverage."
+      },
+      {
+        "id": "COLE-04",
+        "title": "Same-Day Staffing Gap Response Plan",
+        "super": false,
+        "prompt": "It is early morning and I already know today is going to be an uphill battle. My coverage is short, volume is tracking higher than forecast, and I need a same-day response plan fast. Help me build a structured intraday action plan that covers: which levers I can pull to add coverage quickly, how to prioritize which queues or channels get protected first, how to communicate the situation to my team with calmness and urgency at the same time, and what I need to document throughout the day so I have a clean post-mortem ready for my director by end of shift."
+      },
+      {
+        "id": "COLE-05",
+        "title": "Volume Spike 30-50% Above Forecast",
+        "super": false,
+        "prompt": "Volume just spiked 30 to 50 percent above my forecast and I have one hand tied behind my back on staffing. I cannot panic and I need to show my team calm while moving with urgency. Help me build an immediate response framework that covers: what actions I take in the first 15 minutes, how I communicate up to my director before they call me, how I manage my team's energy and focus in the chaos, and what my running documentation should look like throughout the day so I can show clear decision-making under pressure when the debrief happens."
+      },
+      {
+        "id": "COLE-06",
+        "title": "Seasonal Ramp Staffing Plan",
+        "super": false,
+        "prompt": "I am preparing for a major seasonal ramp and my director is going to ask me directly if I am confident in the plan. I need to build a comprehensive seasonal staffing strategy that covers: volume projections with confidence intervals, hiring timeline and headcount requirements, training ramp assumptions built into coverage math, cost implications at multiple volume scenarios, and at least two contingency plans for if volume comes in higher or lower than projected. Help me build something I can present with full confidence while being transparent about the variables that are still in flux."
+      },
+      {
+        "id": "COLE-07",
+        "title": "Director Confidence Conversation — Staffing Plan",
+        "super": false,
+        "prompt": "My director just looked at me and asked directly: are you confident in this staffing plan? I need to answer with genuine confidence while being appropriately transparent about the risks and contingencies. Help me prepare a concise, executive-level response that: confirms my confidence in the core plan, clearly identifies the top 2-3 risk variables, walks through my contingency plans for each risk, and positions me as someone who has thought three steps ahead rather than someone who is guessing. This needs to sound like a leader, not a manager scrambling to cover themselves."
+      },
+      {
+        "id": "COLE-08",
+        "title": "Agent Cost Question from Director",
+        "super": false,
+        "prompt": "My director just asked me how much our current staffing plan is going to cost. I need to answer this question with precision and confidence. Help me build a cost analysis framework that connects my staffing decisions to agent cost drivers — including how scheduling efficiency, adherence rates, overtime usage, and shrinkage all impact the final cost number. Also help me prepare for a conversation where my director and I may not be speaking the same cost language, including how to ask clarifying questions diplomatically so I make sure we are both working from the same budget baseline before I give a number."
+      },
+      {
+        "id": "COLE-09",
+        "title": "Shrinkage Calculation and Planning",
+        "super": false,
+        "prompt": "My shrinkage is coming in higher than what I built into my forecast and it is creating coverage gaps I did not anticipate. Help me build a comprehensive shrinkage analysis that identifies which shrinkage categories are driving the variance — planned versus unplanned, controllable versus uncontrollable. Then help me build an updated forecast that incorporates realistic shrinkage assumptions going forward, and give me the language I need to explain to my director why shrinkage is up and what I am doing to tighten it without making it sound like I did not plan for this."
+      },
+      {
+        "id": "COLE-10",
+        "title": "Contingency Plan Builder",
+        "super": false,
+        "prompt": "I need to build a set of contingency plans for my staffing strategy so that when something unexpected hits I am not thinking through my response in real time — I am executing a plan I already built. Help me create three contingency scenarios: one for volume coming in 20 percent higher than forecast, one for a significant unplanned absence event affecting 10 to 15 percent of my scheduled staff, and one for a technology or phone system outage that prevents agents from working. For each scenario give me: immediate actions, communication templates for the team and for leadership, and the decision triggers that tell me when to activate each plan."
+      },
+      {
+        "id": "COLE-11",
+        "title": "Cross-Department Variable Impact on Staffing",
+        "super": false,
+        "prompt": "Another department — Marketing, IT, or Operations — is planning something that is going to impact my contact center volume or staffing and I did not get much advance notice. Help me build a rapid impact assessment that quantifies how this cross-departmental event is likely to affect my volume, my coverage, and my cost. Then help me draft a communication to the relevant department and to my director that positions me as proactive and collaborative rather than reactive and caught off guard — including specific asks for information I need from them to tighten my projections."
+      },
+      {
+        "id": "COLE-12",
+        "title": "Occupancy Rate Management",
+        "super": false,
+        "prompt": "My occupancy rate is running too high and my agents are burning out, but if I add coverage to bring it down my costs go up and my director is going to push back. Help me build the business case for managing occupancy to a healthy target range. I need data-driven talking points that connect high occupancy to agent attrition risk, quality score degradation, and long-term cost increases that outweigh the short-term savings of running lean. Then help me propose a specific occupancy target and the staffing adjustments required to hit it, with the cost delta clearly laid out."
+      },
+      {
+        "id": "COLE-13",
+        "title": "Excel to WFM Platform Transition Planning",
+        "super": false,
+        "prompt": "I am either transitioning from Excel-based scheduling to a WFM platform or I am trying to maximize the value of a WFM platform I already have but am not fully utilizing. Help me build a transition or optimization plan that covers: what data needs to move from Excel into the platform and how to validate it, which WFM platform capabilities should be prioritized first for maximum immediate impact, and how to use the platform's reporting to answer the director questions that used to make me scramble — staffing confidence, cost projections, and seasonal ramp readiness — with speed and accuracy I could not achieve in Excel."
+      },
+      {
+        "id": "COLE-14",
+        "title": "Post-Incident Debrief and Documentation",
+        "super": false,
+        "prompt": "We just came through a major staffing crisis — a volume spike, a technology outage, or a mass callout event — and I need to document what happened in a way that shows clear decision-making under pressure, identifies what I learned, and proposes process changes to prevent a repeat. Help me build a post-incident debrief document that covers: what happened and when, what decisions I made and why, what worked and what I would do differently, and what specific process improvements I am implementing as a result. This document needs to be ready to share with my director and should position me as a leader who grows from difficult days rather than just survives them."
+      },
+      {
+        "id": "COLE-15",
+        "title": "Calm Under Fire — Managing Team During Crisis",
+        "super": true,
+        "prompt": "I am in the middle of a staffing crisis — volume is significantly above forecast, coverage is short, and my team is feeling the pressure. I know that I cannot panic. I need to project calm while moving with urgency and I need to manage both down to my team and up to my director at the same time. Help me with three things simultaneously: first, give me the specific language I should use right now to communicate with my team in a way that projects calm confidence and channels their energy into productive action rather than anxiety. Second, give me a real-time update template I can send to my director every 30 to 60 minutes throughout the crisis so they always know the situation, the plan, and the progress before they have to ask. Third, help me think through what I am documenting throughout this day so that when the debrief comes I can show exactly how I led through this — because how you manage up in moments like this is exactly what determines how promotable you are."
+      }
+    ]
+  }
+}
